@@ -23,6 +23,6 @@ export class NavBarComponent implements OnInit {
   }
 
   toggleContactUs() {
-    this.modelService.open(ContactusComponent,{size:'xl',keyboard:false,backdrop:false});
+    this.modelService.open(ContactusComponent,{size:'xl'});
   }
 }

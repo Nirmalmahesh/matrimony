@@ -12,7 +12,7 @@ export class HomeScreenComponent implements OnInit {
     mainData : [
       {
         mid:'G.24.16.001',
-        name:'V Karthik',
+        name:'Ramkumar',
         dob: '10-Jan-1989',
         fathersOccupation: 'Private Sector (Late)',
         mothersOccupation: 'Home maker',
@@ -202,7 +202,42 @@ export class HomeScreenComponent implements OnInit {
         siblings : '2 Elder sister(Got married)',
         native: '2 Elder sister(Got married)',
         livingLocation: 'Chennai'
+      },
+      {
+        mid:'G.24.16.001',
+        name:'Ram',
+        dob: '10-Jan-1989',
+        fathersOccupation: 'Private Sector (Late)',
+        mothersOccupation: 'Home maker',
+        education: 'B.Ed',
+        occupation:'IT',
+        company:'TCS',
+        class: 'Middle class',
+        salary: '50000 (Take home)',
+        veedu : 16,
+        siblings : '2 Elder sister(Got married)',
+        native: '2 Elder sister(Got married)',
+        livingLocation: 'Chennai'
       }
+    ],
+    grapes: [
+        {
+        mid:'G.24.16.001',
+        name:'Ram',
+        dob: '10-Jan-1989',
+        fathersOccupation: 'Private Sector (Late)',
+        mothersOccupation: 'Home maker',
+        education: 'B.Ed',
+        occupation:'IT',
+        company:'TCS',
+        class: 'Middle class',
+        salary: '50000 (Take home)',
+        veedu : 16,
+        siblings : '2 Elder sister(Got married)',
+        native: '2 Elder sister(Got married)',
+        livingLocation: 'Chennai'
+      }
+
     ]
   }
 
