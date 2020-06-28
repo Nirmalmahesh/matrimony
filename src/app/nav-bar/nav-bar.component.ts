@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TermsAndConditionsComponent } from '../terms-and-conditions/terms-and-conditions.component';
+import { ContactusComponent } from '../contactus/contactus.component';
 
 @Component({
   selector: 'app-nav-bar',
@@ -19,5 +20,9 @@ export class NavBarComponent implements OnInit {
 
   toggleTermsAndConditions() {
     this.modelService.open(TermsAndConditionsComponent,{size:'xl',keyboard:false,backdrop:false});
+  }
+
+  toggleContactUs() {
+    this.modelService.open(ContactusComponent,{size:'xl',keyboard:false,backdrop:false});
   }
 }
