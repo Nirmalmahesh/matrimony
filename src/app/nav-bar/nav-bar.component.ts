@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { TermsAndConditionsComponent } from '../terms-and-conditions/terms-and-conditions.component';
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.css']
+  styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private modelService: NgbModal
+  ) { }
 
   ngOnInit(): void {
+    this.modelService.open(TermsAndConditionsComponent,{size:'xl',keyboard:false,backdrop:false});
   }
 
+  toggleTermsAndConditions() {
+    this.modelService.open(TermsAndConditionsComponent,{size:'xl',keyboard:false,backdrop:false});
+  }
 }

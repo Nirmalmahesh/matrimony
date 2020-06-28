@@ -4,14 +4,14 @@
             <div class="d-flex justify-content-center">
                 <div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1"> select</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Apple</option>
-                          <option>Orange</option>
-                          <option>Mango</option>
+                        <label for="exampleFormControlSelect1"> Select Filter</label>
+                        <select class="form-control" (change)="optionChange($event)">
+                            <option value="">Select Filter</option>
+                          <option value="apple">Apple</option>
+                          <option value="orange">Orange</option>
+                          <option value="mango">Mango</option>
                         </select>
                       </div>
-                      <button class="btn btn-success">Select</button>
                 </div>
                 
             </div>
@@ -20,21 +20,36 @@
     <div class="row">
         <div class="col-md-3 mt-4" *ngFor="let item of data">
             <div class="card">
-                <h5 class="card-header">{{item.name}}</h5>
+                <h6 class="card-header">{{item.name}}</h6>
                 <div class="card-body">
-                    <span>Mid : {{item.mid}}</span><br>
-                    <span>DOB : {{item.dob}}</span><br>
-                    <span>Father's Occupation : {{item.fathersOccupation}}</span><br>
-                    <span>Mother's Occupation : {{item.mothersOccupation}}</span><br>
-                    <span>Education : {{item.education}}</span><br>
-                    <span>Occupation : {{item.occupation}}</span><br>
-                    <span>Company : {{item.company}}</span><br>
-                    <span>Class : {{item.class}}</span><br>
-                    <span>Salary : {{item.salary}}</span><br>
-                    <span>Veedu : {{item.veedu}}</span><br>
-                    <span>Siblings : {{item.siblings}}</span><br>
-                    <span>Native : {{item.native}}</span><br>
-                    <span>LivingLocation : {{item.livingLocation}}</span><br>
+                    <dl class="row">
+                        <dt class="col-sm-6">MID</dt>
+                        <dd class="col-sm-6">{{item.mid}}</dd>
+                        <dt class="col-sm-6 text-truncate">DOB</dt>
+                        <dd class="col-sm-6">{{item.dob}}</dd>
+                        <dt class="col-sm-6">Father's Occupation</dt>
+                        <dd class="col-sm-6">{{item.fathersOccupation}}</dd>
+                        <dt class="col-sm-6">Mother's Occupation</dt>
+                        <dd class="col-sm-6">{{item.mothersOccupation}}</dd>
+                        <dt class="col-sm-6">Education</dt>
+                        <dd class="col-sm-6">{{item.education}}</dd>
+                        <dt class="col-sm-6">Occupation</dt>
+                        <dd class="col-sm-6">{{item.occupation}}</dd>
+                        <dt class="col-sm-6">Company</dt>
+                        <dd class="col-sm-6">{{item.company}}</dd>
+                        <dt class="col-sm-6">Class</dt>
+                        <dd class="col-sm-6">{{item.class}}</dd>
+                        <dt class="col-sm-6">Salaray</dt>
+                        <dd class="col-sm-6">{{item.salary}}</dd>
+                        <dt class="col-sm-6">Veedu</dt>
+                        <dd class="col-sm-6">{{item.veedu}}</dd>
+                        <dt class="col-sm-6">Siblings</dt>
+                        <dd class="col-sm-6">{{item.siblings}}</dd>
+                        <dt class="col-sm-6">Native</dt>
+                        <dd class="col-sm-6">{{item.native}}</dd>
+                        <dt class="col-sm-6">LivingLocation</dt>
+                        <dd class="col-sm-6">{{item.livingLocation}}</dd>
+                    </dl>
                 </div>
               </div>
         </div>

@@ -1,0 +1,48 @@
+.terms-modal-wrapper.modal-wrapper {
+    text-align: center;
+    .modal-title {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .modal-info {
+      line-height: 2 !important;
+    }
+    .terms-wrapper {
+      line-height: 2 !important;
+      font-size: 12px;
+      .terms {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        .item-no {
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 20px;
+        }
+        .item-desc {
+          width: 94%;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .terms-modal-wrapper.modal-wrapper {
+      .terms-wrapper {
+        .terms {
+          text-align: justify;
+          display: block;
+          .item-no {
+            float: left;
+          }
+        }
+      }
+    }
+  }
+  
